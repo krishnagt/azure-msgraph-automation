@@ -1,6 +1,56 @@
-
-
-
+# NAME: Export-AzureLogsToExternalAPI.ps1
+# AUTHOR: Krishna G T
+# DATE: 04/09/2025
+#
+# KEYWORDS: Azure Automation, PowerShell, Log Analytics, Key Vault, REST API, Multi-Cloud, Webhook
+#
+# COMMENTS:
+# This script is designed to run inside Azure Automation as a Runbook, triggered via Webhook.
+# It parses Log Analytics query results (passed in JSON format), transforms them into
+# structured audit events, and securely forwards them to an external API endpoint 
+# (e.g., another cloud service, SIEM, or monitoring platform).
+#
+# Key actions performed by this script:
+# 1. Parse input JSON payload from Azure Automation Webhook.
+# 2. Connect to Azure using RunAs (Service Principal) connection.
+# 3. Retrieve secrets (username/password) securely from Azure Key Vault.
+# 4. Authenticate against external REST API to obtain access token.
+# 5. Build audit-compliant JSON event payloads from Log Analytics results.
+# 6. Push the formatted events to an external API endpoint via REST call.
+#
+#INPUT PARAMETERS: WebHookData
+# WebHookData  : JSON payload from Azure Automation Webhook containing Log Analytics SearchResult data.
+#
+# OUTPUT:
+# - Sends audit/event logs to the configured external API.
+# - Generates structured JSON payloads including metadata such as eventType, dateTime, tenant, component, etc.
+# - Console output includes debug information, parsed results, and API responses.
+#
+# EXAMPLE:
+# The script runs as part of an Azure Automation Runbook and is triggered using a Webhook.
+# Example trigger payload (simplified Log Analytics SearchResult JSON):
+#
+# {
+#   "WebhookName": "AzureLogWebhook",
+#   "RequestHeader": {},
+#   "RequestBody": {
+#       "data": {
+#           "SearchResult": {
+#               "tables": [
+#                   {
+#                       "columns": [ { "name": "TimeGenerated" }, { "name": "EventID" } ],
+#                       "rows": [
+#                           [ "2025-09-04T08:30:00Z", "4625" ]
+#                       ]
+#                   }
+#               ]
+#           }
+#       }
+#   }
+# }
+#
+# Once triggered, the script will authenticate to Azure, fetch secrets from Key Vault,
+# log into the external API, and push the transformed audit records securely.
 
 
 param (
