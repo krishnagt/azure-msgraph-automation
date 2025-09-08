@@ -50,16 +50,16 @@ Function Get-DiskSize {
 	#Write-Verbose "Fetching the Base System Operating System Details..." -Verbose
 	$TabletOS = (Get-WmiObject -class Win32_OperatingSystem).Caption
 	$TabletOSName =(Get-WmiObject -Class win32_operatingsystem).Version
-	$TabletOSNum = [int]($TabletOSName |%{$_.Split('.')[0];})
+	$TabletOSNum = [int]($SystemOSName |%{$_.Split('.')[0];})
 	
-	If ($TabletOSNum -eq 10)
+	If ($SystemOSNum -eq 10)
 	{
-		$TabletOSstatus = "Pass"
+		$SystemOSstatus = "Pass"
 	}
 	Else
 	{
-		$TabletOSstatus = "Fail"
-		$TabletOSComments = "System is running not running on Windows 10" 
+		$SystemOSstatus = "Fail"
+		$SystemOSComments = "System is running not running on Windows 10" 
 	}
 	
 	$hash = New-Object PSObject -property @{Parameters="OS Name";Value="$TabletOS";Status="$TabletOSstatus";Comments="$TabletOSComments"}
@@ -248,7 +248,7 @@ Function Get-DiskSize {
 
 # Verify Battery and power Status
 
-	If ($Environment -eq "Spoke")
+	If ($Environment -eq "System")
 	{
 	
 		#Write-Verbose "Verifying the Battery Status..." -Verbose
@@ -285,7 +285,7 @@ Function Get-DiskSize {
 		Else
 		{
 			$Battery = "Fail"
-			$BatteryComments = "Tablet is not Connected to the Power, its running on Battery ($Bat_name),Estimated Charge Remaining $est_charge_remaining%,Estimated run time $est_run_time Mins($hours Hours), Find complete Battery report here $OutBatteryPath "
+			$BatteryComments = "System is not Connected to the Power, its running on Battery ($Bat_name),Estimated Charge Remaining $est_charge_remaining%,Estimated run time $est_run_time Mins($hours Hours), Find complete Battery report here $OutBatteryPath "
 			$hash = New-Object PSObject -property @{Parameters="Battery Status";Value="$BatteryStatus";Status="$Battery";Comments="$BatteryComments"}
 			$SystemHash += $hash
 		}
