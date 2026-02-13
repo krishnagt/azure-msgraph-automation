@@ -1,0 +1,110 @@
+{
+    "Assignments":  null,
+    "CreatedDateTime":  "\/Date(1586258344039)\/",
+    "Description":  "",
+    "DeviceManagementApplicabilityRuleDeviceMode":  {
+                                                        "DeviceMode":  null,
+                                                        "Name":  null,
+                                                        "RuleType":  null
+                                                    },
+    "DeviceManagementApplicabilityRuleOSEdition":  {
+                                                       "Name":  null,
+                                                       "OSEditionTypes":  null,
+                                                       "RuleType":  null
+                                                   },
+    "DeviceManagementApplicabilityRuleOSVersion":  {
+                                                       "MaxOSVersion":  null,
+                                                       "MinOSVersion":  null,
+                                                       "Name":  null,
+                                                       "RuleType":  null
+                                                   },
+    "DeviceSettingStateSummaries":  null,
+    "DeviceStatusOverview":  {
+                                 "ConfigurationVersion":  null,
+                                 "ConflictCount":  null,
+                                 "ErrorCount":  null,
+                                 "FailedCount":  null,
+                                 "Id":  null,
+                                 "LastUpdateDateTime":  null,
+                                 "NotApplicableCount":  null,
+                                 "NotApplicablePlatformCount":  null,
+                                 "PendingCount":  null,
+                                 "SuccessCount":  null
+                             },
+    "DeviceStatuses":  null,
+    "DisplayName":  "PowerBattery-Profile",
+    "GroupAssignments":  null,
+    "Id":  "",
+    "LastModifiedDateTime":  "\/Date(1756899156175)\/",
+    "RoleScopeTagIds":  [
+                            "0"
+                        ],
+    "SupportsScopeTags":  true,
+    "UserStatusOverview":  {
+                               "ConfigurationVersion":  null,
+                               "ConflictCount":  null,
+                               "ErrorCount":  null,
+                               "FailedCount":  null,
+                               "Id":  null,
+                               "LastUpdateDateTime":  null,
+                               "NotApplicableCount":  null,
+                               "PendingCount":  null,
+                               "SuccessCount":  null
+                           },
+    "UserStatuses":  null,
+    "Version":  2,
+    "AdditionalProperties":  {
+                                 "@odata.type":  "#microsoft.graph.windows10CustomConfiguration",
+                                 "omaSettings":  [
+                                                     {
+                                                         "@odata.type":  "#microsoft.graph.omaSettingString",
+                                                         "displayName":  "DisplayOffTimeoutOnBattery",
+                                                         "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Power/DisplayOffTimeoutOnBattery",
+                                                         "secretReferenceValueId":  "d49985e5-2256-4296-baf3-6a30d88d74bf_df22d293-66f8-41ea-805b-51663d727c55_0a0774b9-05b5-48a2-ac73-9aabda24f2d5",
+                                                         "isEncrypted":  true,
+                                                         "value":  "****"
+                                                     },
+                                                     {
+                                                         "@odata.type":  "#microsoft.graph.omaSettingString",
+                                                         "displayName":  "DisplayOffTimeoutPluggedIn",
+                                                         "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Power/DisplayOffTimeoutPluggedIn",
+                                                         "secretReferenceValueId":  "d49985e5-2256-4296-baf3-6a30d88d74bf_df22d293-66f8-41ea-805b-51663d727c55_407c439e-1edc-4fc0-8aa7-5d76b329705b",
+                                                         "isEncrypted":  true,
+                                                         "value":  "****"
+                                                     },
+                                                     {
+                                                         "@odata.type":  "#microsoft.graph.omaSettingString",
+                                                         "displayName":  "StandbyTimeoutOnBattery",
+                                                         "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Power/StandbyTimeoutOnBattery",
+                                                         "secretReferenceValueId":  "d49985e5-2256-4296-baf3-6a30d88d74bf_df22d293-66f8-41ea-805b-51663d727c55_44759fef-e517-462b-8d4d-156c89e5edd9",
+                                                         "isEncrypted":  true,
+                                                         "value":  "****"
+                                                     },
+                                                     {
+                                                         "@odata.type":  "#microsoft.graph.omaSettingString",
+                                                         "displayName":  "StandbyTimeoutPluggedIn",
+                                                         "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Power/StandbyTimeoutPluggedIn",
+                                                         "secretReferenceValueId":  "d49985e5-2256-4296-baf3-6a30d88d74bf_df22d293-66f8-41ea-805b-51663d727c55_090fc56b-40d8-4d56-91b9-f7d83b7634e8",
+                                                         "isEncrypted":  true,
+                                                         "value":  "****"
+                                                     },
+                                                     {
+                                                         "@odata.type":  "#microsoft.graph.omaSettingString",
+                                                         "displayName":  "HibernateTimeoutPluggedIn",
+                                                         "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Power/HibernateTimeoutPluggedIn",
+                                                         "secretReferenceValueId":  "d49985e5-2256-4296-baf3-6a30d88d74bf_df22d293-66f8-41ea-805b-51663d727c55_01abaee7-cf77-43bc-a0eb-8b1942364eaa",
+                                                         "isEncrypted":  true,
+                                                         "value":  "****"
+                                                     },
+                                                     {
+                                                         "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                                                         "displayName":  "MaxInactivityTimeDeviceLock",
+                                                         "description":  "MaxInactivityTimeDeviceLock",
+                                                         "omaUri":  "./Device/Vendor/MSFT/Policy/Config/DeviceLock/MaxInactivityTimeDeviceLock",
+                                                         "isEncrypted":  false,
+                                                         "value":  0,
+                                                         "isReadOnly":  false
+                                                     }
+                                                 ]
+                             }
+}
