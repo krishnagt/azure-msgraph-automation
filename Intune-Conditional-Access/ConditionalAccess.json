@@ -1,0 +1,52 @@
+{
+  "@odata.type": "#microsoft.graph.conditionalAccessPolicy",
+  "id": null,
+  "displayName": "CA – MFA + Compliant Device – All Users – Outside Company Network",
+  "state": "enabled",
+  "conditions": {
+    "users": {
+      "includeUsers": [ "All" ],
+      "excludeUsers": [
+        "user-object-id-breakglass-1"
+      ],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": []
+    },
+    "applications": {
+      "includeApplications": [ "All" ],
+      "excludeApplications": []
+    },
+    "clientAppTypes": [
+      "browser",
+      "mobileAppsAndDesktopClients"
+    ],
+    "platforms": {
+      "includePlatforms": [ "all" ],
+      "excludePlatforms": []
+    },
+    "locations": {
+      "includeLocations": [ "All" ],
+      "excludeLocations": [
+        "namedLocationId-company-network"
+      ]
+    }
+  },
+  "grantControls": {
+    "operator": "AND",
+    "builtInControls": [
+      "mfa",
+      "compliantDevice"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": []
+  },
+  "sessionControls": {
+    "applicationEnforcedRestrictions": null,
+    "cloudAppSecurity": null,
+    "signInFrequency": null,
+    "persistentBrowser": null,
+    "secureSignInSession": null
+  }
+}
