@@ -1,0 +1,61 @@
+{
+    "Assignments":  null,
+    "CreatedDateTime":  "\/Date(1623595270325)\/",
+    "Description":  "",
+    "DeviceManagementApplicabilityRuleDeviceMode":  {
+                                                        "DeviceMode":  null,
+                                                        "Name":  null,
+                                                        "RuleType":  null
+                                                    },
+    "DeviceManagementApplicabilityRuleOSEdition":  {
+                                                       "Name":  null,
+                                                       "OSEditionTypes":  null,
+                                                       "RuleType":  null
+                                                   },
+    "DeviceManagementApplicabilityRuleOSVersion":  {
+                                                       "MaxOSVersion":  null,
+                                                       "MinOSVersion":  null,
+                                                       "Name":  null,
+                                                       "RuleType":  null
+                                                   },
+    "DeviceSettingStateSummaries":  null,
+    "DeviceStatusOverview":  {
+                                 "ConfigurationVersion":  null,
+                                 "ConflictCount":  null,
+                                 "ErrorCount":  null,
+                                 "FailedCount":  null,
+                                 "Id":  null,
+                                 "LastUpdateDateTime":  null,
+                                 "NotApplicableCount":  null,
+                                 "NotApplicablePlatformCount":  null,
+                                 "PendingCount":  null,
+                                 "SuccessCount":  null
+                             },
+    "DeviceStatuses":  null,
+    "DisplayName":  "Intune data collection policy",
+    "GroupAssignments":  null,
+    "Id":  "d5583855-114b-4db7-92fb-a01fd75b4157",
+    "LastModifiedDateTime":  "\/Date(1623595270325)\/",
+    "RoleScopeTagIds":  [
+                            "0"
+                        ],
+    "SupportsScopeTags":  true,
+    "UserStatusOverview":  {
+                               "ConfigurationVersion":  null,
+                               "ConflictCount":  null,
+                               "ErrorCount":  null,
+                               "FailedCount":  null,
+                               "Id":  null,
+                               "LastUpdateDateTime":  null,
+                               "NotApplicableCount":  null,
+                               "PendingCount":  null,
+                               "SuccessCount":  null
+                           },
+    "UserStatuses":  null,
+    "Version":  1,
+    "AdditionalProperties":  {
+                                 "@odata.type":  "#microsoft.graph.windowsHealthMonitoringConfiguration",
+                                 "allowDeviceHealthMonitoring":  "enabled",
+                                 "configDeviceHealthMonitoringScope":  "bootPerformance"
+                             }
+}
