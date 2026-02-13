@@ -1,0 +1,70 @@
+{
+    "Assignments":  null,
+    "CreatedDateTime":  "\/Date(1749540353011)\/",
+    "Description":  "This setting manages non-Administrator users\u0027 ability to install Windows app packages.",
+    "DeviceManagementApplicabilityRuleDeviceMode":  {
+                                                        "DeviceMode":  null,
+                                                        "Name":  null,
+                                                        "RuleType":  null
+                                                    },
+    "DeviceManagementApplicabilityRuleOSEdition":  {
+                                                       "Name":  null,
+                                                       "OSEditionTypes":  null,
+                                                       "RuleType":  null
+                                                   },
+    "DeviceManagementApplicabilityRuleOSVersion":  {
+                                                       "MaxOSVersion":  null,
+                                                       "MinOSVersion":  null,
+                                                       "Name":  null,
+                                                       "RuleType":  null
+                                                   },
+    "DeviceSettingStateSummaries":  null,
+    "DeviceStatusOverview":  {
+                                 "ConfigurationVersion":  null,
+                                 "ConflictCount":  null,
+                                 "ErrorCount":  null,
+                                 "FailedCount":  null,
+                                 "Id":  null,
+                                 "LastUpdateDateTime":  null,
+                                 "NotApplicableCount":  null,
+                                 "NotApplicablePlatformCount":  null,
+                                 "PendingCount":  null,
+                                 "SuccessCount":  null
+                             },
+    "DeviceStatuses":  null,
+    "DisplayName":  "Prevent non-admin users from installing packaged Windows apps",
+    "GroupAssignments":  null,
+    "Id":  "",
+    "LastModifiedDateTime":  "\/Date(1749540353011)\/",
+    "RoleScopeTagIds":  [
+                            "0"
+                        ],
+    "SupportsScopeTags":  true,
+    "UserStatusOverview":  {
+                               "ConfigurationVersion":  null,
+                               "ConflictCount":  null,
+                               "ErrorCount":  null,
+                               "FailedCount":  null,
+                               "Id":  null,
+                               "LastUpdateDateTime":  null,
+                               "NotApplicableCount":  null,
+                               "PendingCount":  null,
+                               "SuccessCount":  null
+                           },
+    "UserStatuses":  null,
+    "Version":  1,
+    "AdditionalProperties":  {
+                                 "@odata.type":  "#microsoft.graph.windows10CustomConfiguration",
+                                 "omaSettings":  [
+                                                     {
+                                                         "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                                                         "displayName":  "non-Administrator users\u0027 ability to install Windows app packages",
+                                                         "description":  "non-Administrator users\u0027 ability to install Windows app packages",
+                                                         "omaUri":  "./Device/Vendor/MSFT/Policy/Config/ApplicationManagement/BlockNonAdminUserInstall",
+                                                         "isEncrypted":  false,
+                                                         "value":  1,
+                                                         "isReadOnly":  false
+                                                     }
+                                                 ]
+                             }
+}
