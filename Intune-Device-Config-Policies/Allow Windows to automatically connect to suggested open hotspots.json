@@ -1,0 +1,70 @@
+{
+    "Assignments":  null,
+    "CreatedDateTime":  "\/Date(1749540504562)\/",
+    "Description":  "This policy setting determines whether users can enable the following WLAN settings: \u0027Connect to suggested open hotspots,\u0027 \u0027Connect to networks shared by my contacts,\u0027 and \u0027Enable paid services\u0027.\n\n - \u0027Connect to suggested open hotspots\u0027 enables Windows to automatically connect users to open hotspots it knows about by crowdsourcing networks that other people using Windows have connected to.\n - \u0027Connect to networks shared by my contacts\u0027 enables Windows to automatically connect to networks that the user\u0027s contacts have shared with them, and enables users on this device to share networks with their contacts.\n - \u0027Enable paid services\u0027 enables Windows to temporarily connect to open hotspots to determine if paid services are available.",
+    "DeviceManagementApplicabilityRuleDeviceMode":  {
+                                                        "DeviceMode":  null,
+                                                        "Name":  null,
+                                                        "RuleType":  null
+                                                    },
+    "DeviceManagementApplicabilityRuleOSEdition":  {
+                                                       "Name":  null,
+                                                       "OSEditionTypes":  null,
+                                                       "RuleType":  null
+                                                   },
+    "DeviceManagementApplicabilityRuleOSVersion":  {
+                                                       "MaxOSVersion":  null,
+                                                       "MinOSVersion":  null,
+                                                       "Name":  null,
+                                                       "RuleType":  null
+                                                   },
+    "DeviceSettingStateSummaries":  null,
+    "DeviceStatusOverview":  {
+                                 "ConfigurationVersion":  null,
+                                 "ConflictCount":  null,
+                                 "ErrorCount":  null,
+                                 "FailedCount":  null,
+                                 "Id":  null,
+                                 "LastUpdateDateTime":  null,
+                                 "NotApplicableCount":  null,
+                                 "NotApplicablePlatformCount":  null,
+                                 "PendingCount":  null,
+                                 "SuccessCount":  null
+                             },
+    "DeviceStatuses":  null,
+    "DisplayName":  "Allow Windows to automatically connect to suggested open hotspots",
+    "GroupAssignments":  null,
+    "Id":  "",
+    "LastModifiedDateTime":  "\/Date(1749540504562)\/",
+    "RoleScopeTagIds":  [
+                            "0"
+                        ],
+    "SupportsScopeTags":  true,
+    "UserStatusOverview":  {
+                               "ConfigurationVersion":  null,
+                               "ConflictCount":  null,
+                               "ErrorCount":  null,
+                               "FailedCount":  null,
+                               "Id":  null,
+                               "LastUpdateDateTime":  null,
+                               "NotApplicableCount":  null,
+                               "PendingCount":  null,
+                               "SuccessCount":  null
+                           },
+    "UserStatuses":  null,
+    "Version":  1,
+    "AdditionalProperties":  {
+                                 "@odata.type":  "#microsoft.graph.windows10CustomConfiguration",
+                                 "omaSettings":  [
+                                                     {
+                                                         "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                                                         "displayName":  "Allow Windows to automatically connect to suggested open hotspots",
+                                                         "description":  "Allow Windows to automatically connect to suggested open hotspots",
+                                                         "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Wifi/AllowAutoConnectToWiFiSenseHotspots",
+                                                         "isEncrypted":  false,
+                                                         "value":  0,
+                                                         "isReadOnly":  false
+                                                     }
+                                                 ]
+                             }
+}
